@@ -25,6 +25,7 @@ def getCheapestCity(cities):
 
     return cities[costs.index(min(costs))]
 
+#  returns cities with max duration based on budget
 def maximizeOnBudget(cities, budget):
     budgetCities = []
     max_duration = 0
@@ -41,6 +42,7 @@ def maximizeOnBudget(cities, budget):
 
     return max_duration_cities
 
+#  returns cities with minimum duration based on budget
 def minimizeOnBudget(cities, budget):
     budgetCities = []
     min_duration = float('inf')  # Initialize to a large value
